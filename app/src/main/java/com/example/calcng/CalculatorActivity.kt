@@ -27,7 +27,9 @@ class CalculatorActivity : AppCompatActivity(), View.OnClickListener {
         button7.setOnClickListener(this)
         button8.setOnClickListener(this)
         button9.setOnClickListener(this)
-
+        buttondot.setOnLongClickListener { resultTextVeiw.text = ""
+            return@setOnLongClickListener true
+        }
     }
 
     fun delete(view: View){
